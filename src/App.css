@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+::-webkit-scrollbar
+{
+  width: 8px;
+  background-color: rgb(255, 174, 0);
+}
+
+::-webkit-scrollbar-thumb
+{
+  background-color: rgb(255, 0, 85);
+  height: 10px;
+}
+
+.App
+{
+  min-height: 100vh;
+  width: 100%;
+  background-image: url("./images/background.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 10px;
+}
+
+
+
+.App .container
+{
+   height: 50vh;
+   width: 70vw;
+   backdrop-filter: blur(25px);
+   margin: auto;
+   margin-top: 50px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border: 0.5px solid rgb(212, 212, 212);
+   border-radius: 50px;
+}
+
+.typewriter {
+  font-family: 'Lobster Two', cursive;
+  display: inline-block;
+  color: rgb(208, 244, 8);
+}
+
+.typewriter-text {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  overflow: hidden;
+  letter-spacing: 2px;
+ animation: typing 5s steps(30, end), blink .75s step-end infinite;
+  white-space: nowrap;
+  font-size: 50px;
+  font-weight: 700;
+  border-right: 4px solid orange;
+  box-sizing: border-box;
+}
+
+@keyframes typing {
+  from { 
+      width: 0% 
+  }
+  to { 
+      width: 100% 
+  }
+}
+
+@keyframes blink {
+  from, to { 
+      border-color: transparent 
+  }
+  50% { 
+      border-color: orange; 
+  }
+}
+
+
+.navbar
+{
+  height: 40px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.171);
+  display: flex;
+  justify-content:space-between;
+  padding: 30px;
+  align-items: center;
+  border-radius: 25px;
+  backdrop-filter: blur(65px);
+  border: 1px solid rgba(255, 255, 255, 0.233);
+}
+
+.logo{
+  background-color: transparent;
+}
+
+.logo p
+{
+  font-size: 40px;
+  font-family: 'Lobster Two', cursive;
+  font-weight: 500;
+  color: #fff;
+}
+
+.navbar button
+{
+  outline: none;
+  border: none;
+  padding: 10px;
+  border-radius: 20px;
+  backdrop-filter: blur(25px);
+  background-color: rgba(255, 255, 255, 0.226);
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+
+}
+
+.navbar button:hover{
+  background-color: rgba(255, 255, 255, 0.109);
+  color: rgb(255, 196, 0);
+}
+.usergrid
+{
+  min-height: 0vh;
+  width: 90%;
+  margin: auto;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.usergrid .content
+{
+   padding: 10px;
+   height: 50vh;
+   width: calc(100% / 4);
+   backdrop-filter: blur(20px);
+   margin: 10px;
+   display: flex;
+   justify-content: center;
+   background-color: rgba(255, 255, 255, 0.185);
+   border: 1px solid rgba(255, 255, 255, 0.212);
+}
+
+.usergrid .content .card
+{
+  width: 95%;
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  backdrop-filter: blur(65px);
+}
+
+.usergrid .content .card .avatar_img
+{
+  display: flex;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  overflow: hidden;
+   background-color: rgb(255, 255, 255);
+}
+
+.usergrid .content .card .avatar_img:hover
+{
+  background-color: rgb(255, 187, 0);
+}
+
+.usergrid .content .card .avatar_img  img
+{
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+}
+
+.userdata
+{
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.userdata .name
+{
+  color: rgb(255, 0, 98);
+  font-size: 22px;
+}
+
+.userdata .email
+{
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+}
+
+.loader
+{
+  height:300px;
+  width: 300px;
+  margin: auto;
+  margin-top: 100px;
+  backdrop-filter: blur(65px);
+  background-color: rgba(255, 255, 255, 0.164);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: animate 3s linear infinite;
+}
+
+@keyframes animate {
+  0%
+  {
+    transform: rotateY(0deg)
+  }
+  100%
+  {
+    transform: rotateY(360deg)
+  }
+}
+
+
+.loader .bar
+{
+  height:250px;
+  width: 250px;
+  background-color: rgba(218, 218, 218, 0.445);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader .bar p
+{
+   color: #fff;
+   font-size: 32px;
+   font-weight: bold;
+}
+
